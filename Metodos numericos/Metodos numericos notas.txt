@@ -1,0 +1,32 @@
+Metodos numericos notas
+--------------------------------------------------------------------------------------------------------
+valor verdadero = valor aproximado + error
+error verdadero = valora verdadero - valor aproximado
+
+error relativo fraccional verdadero = error verdadero/valor verdadero
+
+Error relativo = error verdadero/valor verdadero * 100%
+(se representa como epsilon)
+
+---------------------------------------------------------------------------------------------------------
+Ejemplo 1
+
+suponga que se tiene que medir la longitud de un puente y la de un remache y se obtiene 9999 y 9cm respectivamente. si los valores verdaderos son 10000 y 10cm, calcule a) el error verdadero y b) el error relativo porcentual verdadero en cada caso
+
+a)
+FORMULA -> Error verdadero = valora verdadero - valor aproximado
+Error verdadero puente = 10,000 - 9,999 = 1
+Error verdadero remache = 10cm - 9cm = 1
+
+b)
+FORMULA -> Error relativo = error verdadero/valor verdadero * 100%
+Error relativo puente = 1/10,000 * 100% = 0.10%
+Error relativo remache = 1/9 * 100% = 10%
+
+---------------------------------------------------------------------------------------------------------
+
+Ea = Error relativo porcentual aproximado
+Es = tolerancia porcentual prefijada
+
+Ea = ((aproximacion actual - aproximacion anterior)/ aproximacion actual)) * 100%
+|Ea| = Es
