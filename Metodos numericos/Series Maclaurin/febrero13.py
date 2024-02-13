@@ -14,10 +14,10 @@ considerando dos cifras significativas.
 
 import math
 
-true_value = math.cos(1/3) #valor verdadero
+true_value = math.cos(math.pi/3) #valor verdadero
 iterations = 5 #numero de iteraciones
-x = 1/3 #valor de x
-Es = 0.5 * 10**(2-9) #tolerancia
+x = math.pi/3 #valor de x
+Es = 0.5
 aprox = 0
 true_error = 0
 relative_error_per = 0
