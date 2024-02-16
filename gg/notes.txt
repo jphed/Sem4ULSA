@@ -1,0 +1,32 @@
+Comando Redes
+arp -a -> mostrar ips y mac address
+enable -> activar consola
+show interfaces
+show interface status
+configure terminal
+config t
+int Fa0/1 
+switchport access
+
+show ip interface brief
+show running-config
+
+
+-----------------------------------------switch
+enable
+config t
+int fa0/24
+switchport mode trunk
+switchport trunk allowed vlan 100
+-----------------------------------------router
+enable
+config  t 
+int Gi0/0
+no shut
+int Gi0/0.100
+encapsultaion dot1Q 100
+ip address 10.10.100.1 255.255.255.0
+
+
+show ip arp  (capa 3 y router)
+show mac-address table (capa 2 y switch)
