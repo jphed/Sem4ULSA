@@ -12,11 +12,11 @@ for i in range(4):
     print(f"Term {i}: {maclaurin_arctan(1, i+1)}")
 
 # b) Estimación de arctan(1/6)
-x = 1/6
+x = math.pi/6
 true_value = math.atan(x)
 approx_value = 0
 n = 0
-error_threshold = 0.001  # Criterio de error
+error_threshold = 0.5*10**-1  # Criterio de error
 
 while True:
     n += 1
