@@ -11,6 +11,26 @@ for x in range(-5,6):
 print("-----------------------------------------")
 
 
+xsub0 = 0
+error_aproximado = 0
+n = 4 #numero de cifras significativas
+es = 0.5*10**(2-n) #tolerancia que dio geogebra
+previous_xsub0 = 0
+valor_verdadero = 0.56713549
+et = 0 #error_relativo_porcentual_verdadero
+
+
+for i in range(30):
+    xsub0 = math.e**-xsub0
+    error_aproximado = (xsub0 - previous_xsub0)/xsub0 * 100
+    et = (valor_verdadero - xsub0)/valor_verdadero
+    print(f"iteracion = {i}, x = {xsub0:.5f}, ea = {error_aproximado:.5f},  et = {et:.5f}")
+    previous_xsub0 = xsub0
+
+    if abs(error_aproximado) < es:
+        break
+print("-----------------------------------------")
+
 # Crear un array de valores x
 x = np.linspace(-5, 5, 100)
 
