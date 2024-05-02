@@ -27,7 +27,7 @@ G.add_edge('B', 'C', weight=4)
 G.add_edge('A', 'C', weight=1)
 G.add_edge('C', 'D', weight=7)
 G.add_edge('D', 'E', weight=5)
-G.add_edge('E', 'A', weight=3)
+G.add_edge('E', 'A', weight=4)
 
 # Calculate the shortest path
 shortest_path = nx.dijkstra_path(G, 'A', 'E')
