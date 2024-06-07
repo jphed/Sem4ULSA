@@ -1,0 +1,22 @@
+// The Round Table
+digraph {
+	r [label=r]
+	a [label=a]
+	b [label=b]
+	c [label=c]
+	d [label=d]
+	e [label=e]
+	f [label=f]
+	g [label=g]
+	h [label=h]
+	i [label=i]
+	r -> a
+	r -> b
+	r -> c
+	a -> d
+	a -> e
+	c -> f
+	c -> g
+	c -> h
+	c -> i
+}
